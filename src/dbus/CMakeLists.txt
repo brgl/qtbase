@@ -28,6 +28,9 @@ qt_internal_add_module(DBus
         qdbusmetaobject.cpp qdbusmetaobject_p.h
         qdbusmetatype.cpp qdbusmetatype.h qdbusmetatype_p.h
         qdbusmisc.cpp
+        qdbusobjectmanager.cpp qdbusobjectmanager.h qdbusobjectmanager_p.h
+        qdbusobjectmanagerclient.cpp qdbusobjectmanagerclient.h
+        qdbusobjectmanagerserver.cpp qdbusobjectmanagerserver.h
         qdbuspendingcall.cpp qdbuspendingcall.h qdbuspendingcall_p.h
         qdbuspendingreply.cpp qdbuspendingreply.h
         qdbusreply.cpp qdbusreply.h

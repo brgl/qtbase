@@ -23,6 +23,7 @@
 #ifndef QT_BOOTSTRAPPED
 #include "qdbusmessage.h"
 #endif
+#include "qdbusobjectmanager_p.h"
 
 #ifndef QT_NO_DBUS
 
@@ -77,8 +78,10 @@ void QDBusMetaTypeId::init()
         qDBusRegisterMetaType<QLineF>();
         qDBusRegisterMetaType<QVariantList>();
         qDBusRegisterMetaType<QVariantMap>();
+        qDBusRegisterMetaType<QVariantMapMap>();
         qDBusRegisterMetaType<QVariantHash>();
         qDBusRegisterMetaType<QDBusObjectPath>();
+	qDBusRegisterMetaType<QDBusObjPathInterfacesAndProperties>();
 
         qDBusRegisterMetaType<QList<bool> >();
         qDBusRegisterMetaType<QList<short> >();
