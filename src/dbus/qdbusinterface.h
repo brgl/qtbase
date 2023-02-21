@@ -12,6 +12,7 @@
 
 QT_BEGIN_NAMESPACE
 
+typedef QSharedPointer<QDBusInterface> QDBusInterfacePtr;
 
 class QDBusInterfacePrivate;
 class Q_DBUS_EXPORT QDBusInterface: public QDBusAbstractInterface
