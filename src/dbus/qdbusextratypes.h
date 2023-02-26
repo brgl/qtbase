@@ -69,6 +69,12 @@ inline bool operator<(const QDBusObjectPath &lhs, const QDBusObjectPath &rhs)
 inline size_t qHash(const QDBusObjectPath &objectPath, size_t seed = 0)
 { return qHash(objectPath.path(), seed); }
 
+inline QDebug operator<<(QDebug dbg, const QDBusObjectPath &objPath)
+{
+    dbg << objPath.path();
+    return dbg;
+}
+
 
 class Q_DBUS_EXPORT QDBusSignature
 {
